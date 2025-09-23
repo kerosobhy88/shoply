@@ -243,7 +243,7 @@ function Navbar({
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" aria-disabled="true" href="#" onClick={darkmode} style={darklight?{color:"white"}:{}}>
+                <a className="nav-link active" aria-disabled="true"  onClick={darkmode} style={darklight?{color:"white"}:{}}>
                 {darklight? <FontAwesomeIcon icon={faSun} />:<FontAwesomeIcon icon={faMoon}></FontAwesomeIcon> }
                 </a>
               </li>

@@ -79,12 +79,15 @@ border-bottom-right-radius: 50px;
   .h1{
     margin: 0 45px;
   }
+  .link4444{
+    margin: -12px 10px !important;
+  }
 .link1{
   text-decoration: none;
   background-color:rgba(120, 120, 255, 0.993);
   padding: 10px 15px;
 font-weight: 600;
-margin: 50px 8px;
+margin: 50px 10px;
 position: relative;
 display: inline-block;
 transition: .5s;

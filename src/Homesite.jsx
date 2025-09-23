@@ -17,7 +17,12 @@ function Homesite() {
     
   ];
 
-
+const scrollToId = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
   return (
     <>
@@ -38,25 +43,25 @@ function Homesite() {
           <p >your one-stop destination for all your shopping needs!</p>
          
           
-          <Link to="/products" className="text-white link1">
+          <Link to="/products" className="text-white link1 link4444 ">
             <span ><FontAwesomeIcon icon={faShop} />Shop now</span>
           </Link>
           <span className=" text-white"></span>
-          <a href="#About" className="text-white link1">
+          <button  onClick={() => scrollToId("About")} className="text-white link1">
              <span >Reviews</span>
-          </a>
-           <a href="#Contact" className="text-white link1">
+          </button>
+           <button onClick={() => scrollToId("Contact")} className="text-white link1">
              <span >Contact Us</span>
-          </a>
+          </button>
         </div>
-        <a  href="#footer" className="text-white link2">
+        <button onClick={() => scrollToId("footer")}  className="text-white link2">
              <span ><FontAwesomeIcon icon={faArrowDown} /></span>
-          </a>
+          </button>
           
       </div>
-       <a  href="#Home" className="text-white link2 link3">
+       <button onClick={() => scrollToId("Home")} className="text-white link2 link3">
              <span ><FontAwesomeIcon icon={faArrowUp} /></span>
-          </a>
+          </button>
       
     </header>
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Navbar from "./Combonandes/Navbar";
 import Proudcts from "./Proudcts";
 import Homesite from "./Homesite";
@@ -29,6 +29,7 @@ function App() {
 }
 
   return (
+    <HashRouter>
       <Routes>
         <Route path="/Homesite" element={<Homesite/>} />
         {/* التحويل من الصفحة الرئيسية مباشرة لصفحة المنتجات */}
@@ -63,6 +64,7 @@ function App() {
           }
         />
       </Routes>
+    </HashRouter>
   );
 }
 
