@@ -29,7 +29,6 @@ function App() {
 }
 
   return (
-    <BrowserRouter>
       <Routes>
         <Route path="/Homesite" element={<Homesite/>} />
         {/* التحويل من الصفحة الرئيسية مباشرة لصفحة المنتجات */}
@@ -64,7 +63,6 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
   );
 }
 
