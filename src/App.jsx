@@ -29,7 +29,6 @@ function App() {
 }
 
   return (
-    <HashRouter>
       <Routes>
         <Route path="/Homesite" element={<Homesite/>} />
         {/* التحويل من الصفحة الرئيسية مباشرة لصفحة المنتجات */}
@@ -64,7 +63,6 @@ function App() {
           }
         />
       </Routes>
-    </HashRouter>
   );
 }
 
