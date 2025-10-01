@@ -186,7 +186,8 @@ ul li a{
   color: black;
   font-weight: 600;
   transition: 0.3s;
-  position: relative;
+  position: relative;  cursor: pointer;
+
 }
 .divulli ul li a::before{
   content: "";
@@ -200,6 +201,7 @@ ul li a{
   position: absolute;
   opacity: 0;
   transition: .3s;
+  cursor: pointer;
 }
 .divulli ul li a:hover::before{
   left: 0;

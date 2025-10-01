@@ -308,16 +308,16 @@ const scrollToId = (id) => {
       <div className="divulli">
         <ul className="list-unstyled d-flex flex-column flex-md-row m-0 p-0">
           <li className="mx-md-3 my-2 my-md-0">
-            <a href="#Home">Home</a>
+            <a  onClick={() => scrollToId("Home")}  className="text-black ">Home</a>
           </li>
           <li className="mx-md-3 my-2 my-md-0">
-            <a href="#About">Reviews</a>
+            <a onClick={() => scrollToId("About")}  className="text-black ">Reviews</a>
           </li>
           <li className="mx-md-3 my-2 my-md-0">
-            <a href="#Contact">Contact Us</a>
+            <a onClick={() => scrollToId("Contact")}  className="text-black ">Contact Us</a>
           </li>
           <li className="mx-md-3 my-2 my-md-0">
-            <a href="/products">Products</a>
+            <Link to="/products">Products</Link>
           </li>
         </ul>
       </div>
